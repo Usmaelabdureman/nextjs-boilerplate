@@ -30,6 +30,18 @@ export default function Home() {
         <FoodModal onSubmit={handleFoodAdd} />
         </div>
       </div>
+      <div className=' flex justify-center h-20 bg-[#FFB30E] text-white p-2 rounded-lg'>
+        <h1> Are you Starving ?</h1>
+        <h2>just click few to get ... </h2>
+
+        {/* search area */}
+
+        <div className='flex justify-center'>
+          <input type='text' placeholder='search food' className='p-2 rounded-lg'/>
+          <button className='bg-[#FFAE00] text-white p-2 rounded-lg'>Search</button>
+
+        </div>
+      </div>
       {foodItems.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {foodItems.map((item, index) => (
