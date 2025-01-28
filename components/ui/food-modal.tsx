@@ -203,10 +203,11 @@ export function FoodModal({ onSubmit }: FoodModalProps) {
           </div>
 
           <div className="flex justify-end gap-3 pt-4">
+          <Button type="submit" className='bg-[#FFB30E]'>Save Food</Button>
             <Button variant="outline" type="button" onClick={() => setOpen(false)}>
               Cancel
             </Button>
-            <Button type="submit">Save</Button>
+            
           </div>
         </form>
       </DialogContent>
