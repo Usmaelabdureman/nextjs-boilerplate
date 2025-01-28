@@ -24,7 +24,7 @@ export default function Home() {
     <main className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">
-          <Image src="../assets/Logo.svg" alt="logo" width={80} height={80} />
+          <Image src="../assets/Logo.svg" alt="logo" width={100} height={100} />
         </h1>
         <div className='bg-[#FFAE00] text-white p-2 rounded-lg'>
         <FoodModal onSubmit={handleFoodAdd} />
@@ -53,6 +53,16 @@ export default function Home() {
           No items available. Click &quot;Add Food&quot; to get started.
         </div>
       )}
+
+      {/* footer */}
+
+      <div className='flex justify-center bg-[#FFB30E] text-white p-2 rounded-lg'>
+        <h1>lorem ?</h1>
+        <h2>click here to add your restaurant</h2>
+      </div>
+
     </main>
+    
+
   );
 }
